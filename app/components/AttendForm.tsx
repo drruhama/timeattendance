@@ -123,7 +123,7 @@ async function onSubmit(values: z.infer<typeof AttendSchema>) {
  const pasangNilai2 = () => {
   form.setValue("endTime", clocked);
   setClockout(clocked);
-  form.setValue("lokasi", "xx");
+ // form.setValue("lokasi", "xx");
   form.setValue("startTime", "xx");
   form.setValue("employeID", userId );
   form.setValue("tanggal", today);
