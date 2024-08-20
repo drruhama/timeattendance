@@ -45,6 +45,7 @@ const pasangNilaidef = () => {
   form.setValue("endTime", "")
  };
 
+
 // 2. Define a submit handler.
 async function onSubmit(values: z.infer<typeof AttendSchema>) {
   // Do something with the form values.
@@ -120,8 +121,12 @@ async function onSubmit(values: z.infer<typeof AttendSchema>) {
 
  
  const pasangNilai2 = () => {
-  form.setValue("endTime", clocked)
-  setClockout(clocked)
+  form.setValue("endTime", clocked);
+  setClockout(clocked);
+  form.setValue("lokasi", "xx");
+  form.setValue("startTime", "xx");
+  form.setValue("employeID", userId );
+  form.setValue("tanggal", today);
  }
 
 
